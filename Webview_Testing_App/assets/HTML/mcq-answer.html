@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>MCQ Answer</title>
+
+<!-- Bootstrap -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/reset.css" rel="stylesheet">
+<link href="css/main.css" rel="stylesheet">
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body onload="mcqReviewSetHeight()" class="mcq-answer-container">
+<div class="container-fluid">
+  <div class="row">
+    <header class="pageHeader">
+      <h4 class="bookTitle"><strong>Review Answer</strong></h4> 
+    </header>
+    <!-- Answer Container -->   
+    <section class="col-sm-12">
+      <div class="row">
+        <div class="mcq-review-alert"></div>
+        <!-- Quetion Content left Side start -->
+         <div class="col-sm-8">
+          <header class="text-center">
+            <div id="divquestionid" class="mcq-ques-number"> <span class="prveicon prveicon-disbled" id="btnPrevious" title="Previous"> <span class="sprite-img"></span> Prev</span> <span class="qusfirstnumber">1</span> <strong>of</strong> <span class="quesnextnumber"> 100</span> <span class="nexticon" id="btnSaveAndNext" title="Next"> Next <span class="sprite-img"> </span> </span> </div>
+            <section class="pull-right">
+              <ul>
+                <li class="pull-left"><span class="sprite-img icon-bookmark"></span></li>
+                <li class="pull-left"><span class="sprite-img icon-feedback"></span></li>
+                <li class="pull-left"><span class="sprite-img icon-reviewTab" id="mcq-reviewtab"></span></li>
+              </ul>
+            </section>
+          </header>
+          <section class="mcq-question-wrapper">
+            <div class="mcq-questions">A contract where both parties have fulfilled their respective obligations is called:</div>
+            <div class="mcq-answer-option">
+              <ul>
+                <li>
+                  <input type="radio" id="option1" name="questopt" value="A">
+                  <label id="lbloptionA" class="mcq-wrong-answer" for="option1">
+                  <div class="mcq-option-count">A.</div>
+                  <div class="mcq-option-answer">Executed contract</div>
+                  </label>
+                </li>
+                <li>
+                  <input type="radio" id="option2" name="questopt" class="radioBox" value="B">
+                  <label id="lbloptionB" class="mcq-correct-answer" for="option2">
+                  <div class="mcq-option-count">B.</div>
+                  <div class="mcq-option-answer">Executory contract</div>
+                  </label>
+                </li>
+                <li>
+                  <input type="radio" id="option3" name="questopt" class="radioBox" value="C">
+                  <label id="lbloptionC" for="option3">
+                  <div class="mcq-option-count">C.</div>
+                  <div class="mcq-option-answer">Partly executed and partly executory contract</div>
+                  </label>
+                </li>
+                <li>
+                  <input type="radio" id="option4" name="questopt" class="radioBox" value="D">
+                  <label id="lbloptionD" for="option4">
+                  <div class="mcq-option-count">D.</div>
+                  <div class="mcq-option-answer">Unilateral contract</div>
+                  </label>
+                </li>
+              </ul>
+            </div>
+            <!-- MCQ Solution Container Start -->
+            <div class="mcq-solution">
+                <h3><strong>Solution:</strong></h3>
+                <p>An executed contract is a legal document that has been signed off by the people necessary for it to become effective. The contract is often made between two or more people, but it can also be between a person and an entity, or two or more entities.</p>
+            </div>
+            
+            <!-- MCQ Reference  container -->
+            <div class="mcq-reference">
+                <h3><strong>Reference :</strong></h3>
+                <p>An executed contract is a legal document that has been signed off by the people necessary for it to become effective. The contract is often made between two or more people, but it can also be between a person and an entity, or two or more entities.</p>
+            </div>
+            
+            
+            <!-- Button Container Start -->
+            <footer> 
+              <!-- Next- and Previous Button Start -->
+              <div class="col-xs-12">
+                <div class="row">
+                  <div class="col-xs-6 text-center">
+                    <div class="row">
+                      <div class="mcq-previous font-size-md"> <span class="sprite-img icon-prev-btm"></span>Previous </div>
+                    </div>
+                  </div>
+                  <div class="col-xs-6 text-center">
+                    <div class="row">
+                      <div class="mcq-next font-size-md">Next<span class="sprite-img icon-next-btm"></span> </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Next- and Previous Button End --> 
+              
+              <!-- Skipt, Save and Quit, Submit, Check Answer Button start -->
+              <div class="col-sm-12 col-xs-12 top-space10">
+                <div class="row" id="mcqQuesBtns">
+                  <div class="col-sm-12 text-center">
+                    <div class="row">
+                      <div class="mcq-mdbtn btn">
+                        <div class="mcq-test-result"> <strong>Test Result</strong></div> 
+                      </div>
+                    </div>
+                  </div> 
+                </div>
+              </div>
+              
+              <!-- Skipt, Save and Quit, Submit, Check Answer Button End --> 
+              
+            </footer>
+          </section>
+        </div>        
+        <!-- Quetion Content left Side End -->
+        
+        <!-- Mcq Review Questions Right aside -->
+        <div class="mcq-review-container col-sm-4" id="mcq-review-questions">
+            <aside>
+                <header>Review Questions</header>
+                <div id="mcq-review-info" class="font-size-md">
+                    <ul>
+                        <li class="mcq-uncorrected-question">
+                           <span class="sprite-img icon-video"></span>
+                            <div>1.</div>
+                            <div>Lorem Ipsum is simply dummy text of the printing and typesetting industry</div>
+                        </li>
+                        <li class="mcq-corrected-question">
+                           <span class="sprite-img icon-video"></span>
+                            <div>2.</div>
+                            <div>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</div>
+                        </li>
+                        <li class="mcq-review-select"> 
+                            <div>3.</div>
+                            <div>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</div>
+                        </li>
+                        <li>
+                            <div>4.</div>
+                            <div>Lorem Ipsum is simply dummy text of the printing and typesetting industry</div>
+                        </li>
+                        <li> 
+                            <div>5.</div>
+                            <div>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</div>
+                        </li>
+                        <li>
+                            <div>6.</div>
+                            <div>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</div>
+                        </li>
+                        <li>
+                            <div>7.</div>
+                            <div>Lorem Ipsum is simply dummy text of the printing and typesetting industry</div>
+                        </li>
+                        <li>
+                            <div>8.</div>
+                           <div>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</div>
+                        </li>
+                        <li>
+                            <div>9.</div>
+                            <div>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</div>
+                        </li>
+                        <li>
+                            <div>10.</div>
+                            <div>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</div>
+                        </li>
+                        <li>
+                            <div>11.</div>
+                            <div>Lorem Ipsum is simply dummy text of the printing and typesetting industry</div>
+                        </li>
+                        <li>
+                            <div>12.</div>
+                            <div>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</div>
+                        </li>
+                        <li>
+                            <div>13.</div>
+                            <div>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</div>
+                        </li>
+                        <li>
+                            <div>14.</div>
+                            <div>Lorem Ipsum is simply dummy text of the printing and typesetting industry</div>
+                        </li>
+                        <li>
+                            <div>15.</div>
+                           <div>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</div>
+                        </li> 
+                    </ul>
+                </div>
+            </aside>
+        </div>
+        
+      </div>
+    </section>
+  </div>
+</div>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
+<!-- Include all compiled plugins (below), or include individual files as needed --> 
+<script src="js/bootstrap.min.js"></script>
+<script src="js/main.js"></script>
+    
+</body>
+</html>

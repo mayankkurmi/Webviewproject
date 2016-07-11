@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="light_aqua_for_box">#3bbfce</color>
+    <color name="edit_text_auqa_color">#6ccfda</color>
+    <color name="white">#ffffff</color>
+    <color name="txt_dark_title">#333333</color>
+    <color name="txt_hint">#CCCCCC</color>
+    <color name="aqua">#19b4c6</color>
+    <color name="bg_color">#f6f6f6</color>
+    <color name="grid_bg_color">#E9EDF0</color>
+    <color name="divider">#e9e9e9</color>
+    <color name="green">#60b640</color>
+    <color name="gray">#666666</color>
+    <color name="txt_light_gry_title">#999999</color>
+    <color name="sub_title_gry">#f0f0f0</color>
+    <color name="txt_light_gry_title_new_mcq">#333333</color>
+    <color name="txt_color">#666666</color>
+    <color name="txt_white">#fcfcfc</color>
+    <color name="txt_non_active_color">#EAEAEA</color>
+    <color name="btn_non_active">#BABABA</color>
+    <color name="blue">#006ED2</color>
+    <color name="txt_green">#448432</color>
+    <color name="ligth_yellowish_back">#fcfbf8</color>
+    <color name="status_missed">#E83234</color>
+    <color name="status_open">#08C0D1</color>
+    <color name="status_attempted">#137DCF</color>
+    <color name="status_review_result">#613B1B</color>
+    <color name="status_on_schedule">#666666</color>
+    <color name="status_completed">#5EBB46</color>
+    <color name="txt_black">#000000</color>
+    <color name="light_orange">#fff3d6</color>
+    <color name="orange">#f58e27</color>
+    <color name="red">#ff0000</color>
+    
+    
+    <!-- <color name="light_blue_selector">#D0DCE9</color> -->
+
+
+    <!-- Uncomment For Pearson Dark Color Background -->
+<!--     <color name="dark_blue_color_background">#004899</color> -->
+<!--     <color name="fade_blue_color_background">#009ecf</color> -->
+<!--     <color name="blue_color_background">#004899</color> -->
+    <!-- END Pearson Dark Color Background -->
+
+
+    <!-- Color Coder for flipick Uncomment For Pearson Dark Color Background -->
+    <color name="dark_blue_color_background">#19b4c6</color>
+    <color name="fade_blue_color_background">#009ecf</color>
+    <color name="blue_color_background">#19b4c6</color>
+    <!-- END Pearson Dark Color Background -->
+
+
+    <!-- Foe MYPGMEE Backgrounds -->
+    <!-- <color name="dark_blue_color_background">#007398</color> -->
+    <!-- <color name="fade_blue_color_background">#009ecf</color> -->
+    <!-- <color name="blue_color_background">#007398</color> -->
+
+
+    <!-- <color name="orange_color_background">#f79026</color> -->
+    <color name="gray_background">#efeff4</color>
+    <color name="divider_new">#d0d0d0</color>
+
+    <!-- highlighighting color -->
+
+    <color name="highlight_green">#3dd62f</color>
+    <color name="highlight_blue">#1ab3c4</color>
+    <color name="highlight_violet">#3476fa</color>
+    <color name="highlight_yellow">#ffeb0a</color>
+    <color name="highlight_orange">#eb8810</color>
+    <color name="highlight_red">#e85454</color>
+    <color name="Blue">#3E8FFB</color>
+    <color name="newbackgroundcolor">#E9EDF0</color>
+    <color name="newtextcolor">#898989</color>
+    <color name="child_text_color">#484848</color>
+    <color name="test_name_color">#3f8ffb</color>
+    <color name="test_history_labels">#464646</color>
+
+</resources>

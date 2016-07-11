@@ -1,0 +1,644 @@
+/* :::::::::: Font :::::::::: */
+@font-face {
+	font-family:'Calibri';
+	src:url('fonts/Calibri.eot?#iefix') format('embedded-opentype'),  url('fonts/Calibri.woff') format('woff'), url('fonts/Calibri.ttf') format('truetype'),  url('fonts/Calibri.svg#Calibri') format('svg');
+	font-weight:normal;
+	font-style:normal
+}
+/* :::::::::: body :::::::::: */
+body {
+	font-family:'Calibri';
+	font-size: 14px
+}
+/* selection */
+::-moz-selection {
+ background: #b3d4fc;
+ text-shadow: none
+}
+::selection {
+	background: #b3d4fc;
+	text-shadow: none
+}
+img {
+	vertical-align: middle;
+	max-width: 100%
+}
+textarea {
+	resize: vertical
+}
+.chromeframe {
+	margin: 0.2em 0;
+	background: #ccc;
+	color: #000;
+	padding: 0.2em 0
+}
+/* Misclenious style starts */
+.clear {
+	clear: both
+}
+.top-space10 {
+	margin-top: 0.625em
+}
+.top-space20 {
+	margin-top: 20px
+}
+.font-size-md {
+	font-size: 16px;
+}
+/* MCQ Button start */
+.mcq-mdbtn {
+	background: #fff;
+	border-radius: 5px;
+	padding: 12px 0 12px;
+	display: block;
+	margin: 0 4px 0;
+}
+.mcq-mdbtn:hover, .mcq-mdbtn:active, .mcq-mdbtn:focus {
+	outline: 0;
+	background-image: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+.disabled {
+    cursor: not-allowed !important;
+    filter: alpha(opacity=65) !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    opacity: .65 !important;
+}
+/* :::::::::: Start Main CSS :::::::::: */
+.pageHeader {
+	background: #cad4db;
+	height: 41px;
+	position: relative;
+}
+/* Sprite Image start */
+.sprite-img {
+	background:url(../img/sprite-image.png) no-repeat;
+}
+/* Sprite Image end */
+
+h4.bookTitle {
+	position: absolute;
+	left: 50%;
+	margin: 10px 0 0 -50px;
+	font-size: 18px;
+}
+.timeBlock {
+	float: right;
+	margin: 11px 20px 0 0;
+	line-height: 1.1;
+	font-size: 16px;
+	color: #777777;
+}
+.timeBlock span.sprite-img {
+	background-position: -17px -296px;
+	width: 17px;
+	height: 17px;
+	float: left;
+	margin: 0 6px 0 0;
+}
+/* Question Container */
+.mcq-ques-container .pageHeader + section.col-sm-12, .mcq-answer-container .pageHeader + section.col-sm-12 {
+	margin: 0;
+}
+.mcq-ques-number {
+	padding: 0;
+	display: inline-block;
+	float: none;
+	margin: 0 0 12px;
+}
+span.prveicon, span.nexticon {
+	color: #fff;
+	font-weight: bold;
+	margin-right: 9px;
+	cursor: pointer;
+	padding: 10px;
+	line-height: 1;
+	display: inline-block;
+	text-transform: uppercase;
+	line-height: 1;
+	border-radius: 15px;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+}
+span.prveicon {
+	background: #3e8ffa;
+	padding: 6px 11px 5px 9px;
+}
+.prveicon .sprite-img {
+	background-position: -23px -18px;
+	width: 5px;
+	height: 10px;
+	display: inline-block;
+	margin-right: 2px;
+}
+.qusfirstnumber, .quesnextnumber, .qusfirstnumber + strong {
+	font-size: 18px;
+	font-weight: bold;
+}
+span.nexticon {
+	background: #3e8ffa;
+	padding: 6px 9px 5px 11px;
+	margin-left: 9px
+}
+span.nexticon span.sprite-img {
+	background-position: -23px -64px;
+	width: 5px;
+	height: 10px;
+	display: inline-block;
+	margin-left: 3px;
+}
+.mcq-ques-container section.col-sm-12 header, .mcq-answer-container section.col-sm-12 header {
+	border-bottom: 1px solid #bbbbbb;
+	overflow: hidden;
+}
+.mcq-ques-container section.col-sm-12 .col-sm-8 header, .mcq-answer-container section.col-sm-12 .col-sm-8 header {
+     margin-top: 14px;
+}
+/* mcq question dynamic button css */
+.mcq-btn-one .col-sm-3 {
+	width: 100%;
+}
+.mcq-btn-two .col-sm-3 {
+	width: 50%;
+}
+.mcq-btn-three .col-sm-3 {
+	width: 33.33%;
+}
+/* MCQ Question Right Icon */
+.sprite-img.icon-bookmark, .sprite-img.icon-feedback, .sprite-img.icon-reviewTab {
+	float: left;
+	margin: 3px 0 0 20px;
+	cursor: pointer;
+}
+.sprite-img.icon-bookmark {
+	width: 16px;
+	height: 21px;
+	background-position: -17px -114px;
+	margin: 3px 0 0 0;
+}
+.sprite-img.icon-feedback {
+	width: 20px;
+	height: 21px;
+	background-position: -15px -175px;
+}
+.sprite-img.icon-reviewTab {
+	width: 27px;
+	height: 22px;
+	background-position: -12px -235px;
+}
+.sprite-img.icon-bookmark {
+	width: 16px;
+	height: 21px;
+	background-position: -17px -114px;
+	margin: 3px 0 0 0;
+}
+.mcq-ques-container header section.pull-right li:last-child, .mcq-answer-container header section.pull-right li:last-child {
+	display: none;
+}
+/* Quetion Holder */ 
+
+.mcq-question-wrapper {
+	width: 100%;
+	overflow: hidden;
+	margin: 20px 0 0;
+}
+.mcq-questions {
+	font-size: 18px;
+	font-weight: bold;
+	margin: 4px 0 6px;
+	line-height: 24px;
+}
+.mcq-ques-option, .mcq-answer-option {
+	margin: 13px 0 0;
+	float: left;
+	width: 100%;
+}
+.mcq-ques-option li, .mcq-answer-option li {
+	position: relative;
+	background: #fff;
+	margin: 0 0 10px;
+	border-radius: 5px;
+	font-size: 16px;
+	overflow: hidden;
+}
+.mcq-ques-option li:hover {
+	background: #f8f7f5;
+}
+.mcq-ques-option li:hover label {
+	color: #388efb !important;
+}
+.mcq-answer-option li:hover label {
+	cursor: default
+}
+.mcq-ques-option li input[type="radio"], .mcq-answer-option li input[type="radio"] {
+	clip: rect(0,0,0,0);
+	margin: 0;
+	position: absolute;
+}
+.mcq-ques-option li input[type="radio"] + label, .mcq-answer-option li input[type="radio"] + label {
+	cursor: pointer;
+	display: block;
+	position: relative;
+	font-weight: bold;
+}
+.mcq-answer-option li input[type="radio"] + label {
+	cursor: default
+}
+.mcq-ques-option li input[type="radio"]:checked+label {
+	background: #388cff;
+	color: #fff !important;
+}
+.mcq-option-count {
+	padding: 17px 0 17px 20px;
+	position: absolute;
+}
+.mcq-option-answer {
+	margin-left: 38px;
+	padding: 17px 20px 17px 0;
+	position: relative;
+}
+/* Footer Button */
+.mcq-ques-container .col-sm-8 footer, .mcq-answer-container .col-sm-8 footer {
+	margin: 19px 0 10px;
+	clear: both;
+	float: left;
+	width: 100%;
+}
+.mcq-previous, .mcq-next {
+	background: #fff;
+	border-radius: 5px;
+	padding: 13px 0 12px;
+	display: block;
+	margin: 0 5px 0;
+	font-weight: bold;
+	cursor: pointer;
+}
+.mcq-previous {
+	margin-left: 0
+}
+.mcq-next {
+	margin-right: 0
+}
+span.sprite-img.icon-prev-btm, span.sprite-img.icon-next-btm {
+	background-position: -19px -351px;
+	width: 10px;
+	height: 13px;
+	display: inline-block;
+}
+span.sprite-img.icon-prev-btm {
+	background-position: -19px -351px;
+	margin: 0 10px 0 0;
+}
+span.sprite-img.icon-next-btm {
+	background-position: -19px -403px;
+	margin: -2px 0 0 9px;
+	vertical-align: middle;
+}
+.mcq-count {
+	display: inline-block
+}
+.mcq-mdbtn .mcq-count span:before, .mcq-mdbtn .mcq-count span:before {
+	content: "";
+	width: 5px;
+	height: 5px;
+	background: #85da00;
+	display: inline-block;
+	border-radius: 100%;
+	margin: 5px 4px 0 0;
+	float: left
+}
+.mcq-mdbtn .mcq-skip-count span:before, .mcq-mdbtn .mcq-skip-count span:before {
+	background: #e64c4c;
+}
+.mcq-mdbtn .mcq-savequit-count span:before, .mcq-mdbtn .mcq-savequit-count span:before {
+	background: #408ffb;
+}
+.mcq-ques-container footer .col-sm-3.col-xs-6.text-center:first-child .mcq-mdbtn.btn, .mcq-answer-container footer .col-sm-3.col-xs-6.text-center:first-child .mcq-mdbtn.btn {
+	margin-left: 0;
+}
+.mcq-ques-container footer .col-sm-3.col-xs-6.text-center:last-child .mcq-mdbtn.btn, .mcq-answer-container footer .col-sm-3.col-xs-6.text-center:last-child .mcq-mdbtn.btn {
+	margin-right: 0;
+}
+.mcq-ques-container .pageHeader + section.col-sm-12 .col-sm-8 .col-sm-3.col-xs-6 .mcq-mdbtn, .mcq-answer-container .pageHeader + section.col-sm-12 .col-sm-8 .col-sm-3.col-xs-6 .mcq-mdbtn {
+	height: 55px;
+	line-height: 1.2
+}
+div#btnCheckCaption {
+	line-height: 32px;
+}
+/* Mcq Question Review aside */
+.mcq-review-container aside{
+    position: fixed;
+    
+}
+.mcq-ques-container aside header, .mcq-answer-container aside header {
+	padding: 0 0 17px 0;
+	background: none;
+	font-size: 18px;
+	margin: 16px 0 30px;
+	font-weight: bold;
+}
+.mcq-review-container {
+	overflow: auto;
+	margin: 0;
+}
+.mcq-review-container ul {
+	background: #fff;
+}
+.mcq-review-container li {
+	padding: 5px 24px 5px 48px;
+	border-bottom: 1px solid #eee;
+	position: relative;
+	line-height: 22px;
+	min-height: 60px;
+}
+.mcq-review-container li div {
+	display: table-cell;
+	cursor: pointer;
+}
+.mcq-review-container li div:last-child {
+	padding-left: 4px;
+}
+.mcq-review-container li:hover, .mcq-review-container li.mcq-review-select {
+	background: #fffce5;
+	cursor: pointer;
+}
+.mcq-review-alert {
+	width: 100%;
+	background: rgba(0,0,0,.5);
+	height: 100%;
+	position: fixed;
+	z-index: 999;
+	top: 40px;
+	left: 0;
+	display: none;
+}
+div#mcq-review-info {
+	max-height: 550px;
+	overflow: auto;
+}
+.mcq-attempt-question:before, .mcq-corrected-question:before {
+	content: "";
+	display: inline-block;
+	width: 8px;
+	height: 8px;
+	border-radius: 8px;
+	background: #85da00;
+	position: absolute;
+	top: 12px;
+	left: 24px;
+}
+/* ::::::::::::::::::::: MCQ Answer ::::::::::::::::: */
+.mcq-answer-container .mcq-mdbtn {
+	margin: 0
+}
+/*.mcq-answer-container .mcq-answer-option li label {
+    background: #f0f3f5;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: default; 
+    font-weight: bold;
+}*/
+.mcq-answer-container .mcq-answer-option li .mcq-wrong-answer, .mcq-answer-container .mcq-answer-option li .mcq-correct-answer, 
+.mcq-ques-container .mcq-ques-option li .mcq-wrong-answer, .mcq-ques-container .mcq-ques-option li .mcq-correct-answer{
+	background-color: #fff;
+}
+.mcq-answer-container .mcq-answer-option li .mcq-correct-answer, .mcq-ques-container .mcq-ques-option li .mcq-correct-answer {
+	background-image: url(../img/sprite-image.png);
+	background-position:100% -436px;
+	border: 2px solid #7bd20b;
+	background-repeat: no-repeat;
+	border-radius: 5px;
+}
+.mcq-answer-container .mcq-answer-option li .mcq-wrong-answer, .mcq-ques-container .mcq-ques-option li .mcq-wrong-answer {
+	background-image: url(../img/sprite-image.png);
+	background-position: 100% -488px;
+	background-repeat: no-repeat;
+	border: 2px solid #e64c4c;
+	border-radius: 5px;
+}
+.mcq-wrong-answer .mcq-option-count, .mcq-correct-answer .mcq-option-count {
+	padding: 15px 0 15px 20px;
+}
+.mcq-wrong-answer .mcq-option-answer, .mcq-correct-answer .mcq-option-answer {
+	padding: 15px 40px 15px 0;
+}
+.mcq-solution, .mcq-reference {
+	clear: both;
+	margin: 10px 0 10px 0;
+	background: #fff;
+	padding: 16px 21px 14px;
+	border-radius: 5px;`   
+	line-height: 20px;
+	float: left;
+	width: 100%;
+}
+.mcq-solution p, .mcq-reference p {
+	font-style: italic;
+	margin: 6px 0 0;
+    line-height: 20px;    
+    clear: both;
+    float: left;
+    width: 100%;
+}
+.mcq-skipped-question:before, .mcq-uncorrected-question:before {
+	content: "";
+	display: inline-block;
+	width: 8px;
+	height: 8px;
+	border-radius: 8px;
+	background: #e64c4c;
+	position: absolute;
+	top: 12px;
+	left: 24px;
+}
+.icon-video {
+	width: 18px;
+	height: 16px;
+	position: absolute;
+	background-position: -17px -659px;
+	display: inline-block;
+	top: 33px;
+	left: 22px;
+}
+.mcq-answer-container header.pageHeader, .mcq-result-dashboard header.pageHeader {
+	text-align: center;
+}
+.mcq-answer-container h4.bookTitle, .mcq-result-dashboard h4.bookTitle {
+	margin: 10px 0 0;
+	position: initial;
+	display: inline-block;
+}
+.mcq-solution h3, .mcq-reference h3 {
+    margin: 3px 0;
+        float: left;
+    width: 100%;
+}
+/* ::::::::::::::::::::: MCQ Result Dashboard ::::::::::::::::: */
+.mcq-result-dashboard section > h2 {
+	font-size: 18px;
+	font-weight: bold;
+	margin: 21px 0;
+}
+.mcq-resltdash-wrapper {
+	background: #fff;
+	border-radius: 5px;
+	padding: 21px;
+	overflow: hidden;
+}
+.mcq-result-progress {
+	overflow: hidden;
+	width: 100%;
+	margin-bottom: 40px;
+}
+.mcq-rprogress-wrapper {
+	background: #ebebeb;
+	height: 44px;
+	border-radius: 5px;
+	overflow: hidden;
+}
+.mcq-corrctans-progess {
+	float: left;
+	width: 40%;
+	background: url("../img/sprite-image.png") no-repeat 100% -545px #7ff073;
+	height: 44px;
+}
+.mcq-wrong-progess {
+	float: left;
+	height: 44px;
+	background: url("../img/sprite-image.png") no-repeat 100% -594px #ff7a7a;
+	width: 30%;
+}
+.mcq-resltdash-wrapper small {
+	font-size: 16px;
+	font-weight: bold;
+}
+.mcq-resltdash-wrapper small + div {
+	font-size: 24px;
+	font-weight: bold;
+}
+.mcq-resltdash-wrapper .col-xs-12 .col-xs-12 {
+	margin-bottom: 40px;
+}
+.mcq-progress-score {
+	font-size: 50px;
+	line-height: 51px;
+}
+.mcq-resltdash-wrapper small + div em {
+	font-style: italic;
+}
+.mcq-timetaken {
+	display: inline-block;
+	text-align: left;
+}
+.mcq-result-btn button.btn.gray {
+	background: #464646;
+	color: #fff;
+	font-size: 18px;
+	margin: 0 2px;
+	font-weight: bold;
+}
+.mcq-result-btn {
+	float: right;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* :::::::::::::::::::::::::: Media Query :::::::::::::::::::::::::: */
+@media(max-width:972px) {
+.mcq-result-btn button.btn.gray {
+	width: 144px
+}
+.mcq-progress-score {
+	text-align: center
+}
+.mcq-progress-score {
+	font-size: 50px;
+}
+.mcq-resltdash-wrapper small + div {
+	font-size: 30px;
+	font-weight: bold;
+}
+.mcq-result-btn {
+	float: none;
+}
+}
+ @media(min-width:769px) {
+.mcq-review-container {
+	width:33.33333333% !important;
+}
+.mcq-review-alert {
+	display: none !important
+}
+}
+ @media(max-width:768px) {
+/* mcq review Question */  
+.mcq-ques-container .pageHeader + section.col-sm-12 .col-sm-8, .mcq-answer-container .pageHeader + section.col-sm-12 .col-sm-8 {
+	width: 100%;
+}
+.mcq-review-container {
+	position: absolute;
+	top: -1px;
+	right: 0;
+	width: 0;
+	z-index: 1000;
+	padding: 0;
+	margin: 0;
+}
+.mcq-review-container aside {
+	float: right;
+	background: #fff; 
+    position: initial;
+}
+.mcq-ques-container header section.pull-right li:last-child, .mcq-answer-container header section.pull-right li:last-child {
+	display: block;
+}
+.mcq-ques-container aside header, .mcq-answer-container aside header {
+	padding: 17px 0 17px 20px; 
+    margin: 0px 0 20px;
+}
+.mcq-ques-number {
+	float: left
+}
+}
+ @media(max-width:767px) {
+.mcq-ques-container .pageHeader + section.col-sm-12 .col-sm-8 .col-sm-3.col-xs-6.text-center, .mcq-answer-container .pageHeader + section.col-sm-12 .col-sm-8 .col-sm-3.col-xs-6.text-center {
+	margin: 0 0 10px;
+}
+.mcq-ques-container footer .col-sm-3.col-xs-6:nth-child(2) .mcq-mdbtn.btn, .mcq-answer-container footer .col-sm-3.col-xs-6:nth-child(2) .mcq-mdbtn.btn {
+	margin-right: 0;
+}
+.mcq-ques-container footer .col-sm-3.col-xs-6:nth-child(3) .mcq-mdbtn.btn, .mcq-answer-container footer .col-sm-3.col-xs-6:nth-child(3) .mcq-mdbtn.btn {
+	margin-left: 0;
+}
+}
+ @media(max-width:480px) {
+.mcq-ques-number {
+	float: left;
+}
+}
+@media(max-width:479px) {
+.sprite-img.icon-bookmark, .sprite-img.icon-feedback {
+	display: none
+}
+.mcq-result-btn button.btn.gray {
+	width: auto
+}
+}
