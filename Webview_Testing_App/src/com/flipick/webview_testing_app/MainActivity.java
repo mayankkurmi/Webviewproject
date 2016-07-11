@@ -26,6 +26,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
+import android.widget.Toast;
 
 @SuppressLint("SetJavaScriptEnabled")
 @TargetApi(Build.VERSION_CODES.KITKAT)
@@ -129,6 +130,8 @@ public class MainActivity extends Activity implements AnimationListener,
 		top_bar = (LinearLayout) findViewById(R.id.top_bar);
 		browser = (XWalkView) findViewById(R.id.xwalkview_sec);
 		btn_download.setOnClickListener(this);
+		Toast.makeText(getApplicationContext(), "fsfs", Toast.LENGTH_SHORT)
+				.show();
 		// browser.clearCache(true);
 		// browser.addJavascriptInterface(new jsinterface(this),
 		// "AndroidFunction");
